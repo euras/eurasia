@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'roboto_regular';
+  src: url("../fonts/RobotoRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_light';
+  src: url("../fonts/RobotoLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_black';
+  src: url("../fonts/exoblack.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header:before {
+  content: ' ';
+  display: table;
+}
+
+header:after {
+  clear: both;
+}
+
+header {
+  height: 65px;
+  color: #fff;
+  background: #61A3DA;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  margin-top: -65px;
+}
+#logo{
+  width: 250px;
+  margin: 0 auto;
+}
+
+#logo img{
+  margin: -5px auto;
+  width: 250px;
+}
+
+#nav {
+  position: relative;
+  font-family: 'roboto_regular', sans-serif;
+  font-size: 13px;
+  line-height: 90px;
+  width: 35%;
+  height: 100%;
+  top: -126px;
+  margin: 0 10%;
+}
+
+#nav ul {
+  margin-right: 46px;
+}
+
+#nav > ul:before {
+  display: table;
+  content: ' ';
+}
+
+#nav > ul:after {
+  content: '';
+  clear: both;
+}
+
+#nav > ul > li {
+  float: left;
+  margin: 0 5px;
+}
+
+#nav > ul > li a {
+  color: #fff;
+}
+
+#slider {
+    height: 430px;
+}
+
+main {
+  color: #000;
+  background: #fff;
+}
+
+main h1 {
+  height: 80px;
+  line-height: 80px;
+  font-size: 25px;
+  font-family: 'exo_black', sans-serif;
+  color: #fff;
+  background: #5D97C8;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  margin-bottom: 81px;
+  letter-spacing: 0.4px;
+}
+
+main h1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -webkit-calc(50% - 40px);
+  left: calc(50% - 40px);
+  border-top: 17px solid #5D97C8;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+}
+
+main h2 {
+  text-align: center;
+  margin: 0 0 18px 0;
+  font-size: 30px;
+  color: #2A2A2A;
+  background: #fff;
+  font-family: 'roboto_regular';
+}
+
+main p {
+  width: 900px;
+  margin: 0 auto 18px auto;
+  font-family: 'roboto_light';
+}
+
+main > p:last-child {
+  margin-bottom: 81px;
+}
+
+footer {
+  color: #fff;
+  background-image: url(//pdc/share/Projects/eurasia/brillant/brillant_@2X.png);
+  padding: 30px 40px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'roboto_regular', sans-serif;
+  background-color: #61A3DA;
+}
+
+footer > ul {
+  display: inline-block;
+  min-width: 200px;
+}
+
+#slider {
+  overflow: hidden;
+  width: 900px;
+  /*background: #333;*/
+  margin: 0 auto;
+  position: relative;
+  font-family: 'roboto_regular', sans-serif;
+  margin-top: 65px;
+  font-size: 14px;
+}
+#slider *::selection{
+}
+#slider #long{
+  width: 500%;
+  /*transition: .5s;*/
+}
+p{
+  overflow: hidden;
+}
+#slider #before, #slider #after{
+  position: absolute;
+  display: block;
+  top: 30%;
+  color: #666;
+  font-size: 40px;
+  cursor: pointer;
+}
+#slider #before{
+  left: 35%;
+
+}
+#slider #after{
+  right: 35%;
+
+}
+
+.slide{
+  float: left;
+  width: 200px;
+  text-align: center;
+  padding: 50px;
+}
+.slide h2{
+  text-align: center;
+  margin: 0;
+}
+.slide p{
+  margin: 0;
+}

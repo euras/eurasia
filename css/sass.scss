@@ -1,0 +1,182 @@
+$c2: #fff;
+$c1: #000;
+
+@font-face {
+    font-family: 'roboto_regular';
+    src: url('../fonts/RobotoRegular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_light';
+    src: url('../fonts/RobotoLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exo_black';
+    src: url('../fonts/exoblack.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, ul, li{
+	margin: 0;
+	padding: 0;
+}
+// body {
+// }
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+header:before {
+	content: ' ';
+	display: table;
+}
+header:after {
+	clear: both;
+}
+header {
+	height: 100px;
+	color: $c2;
+	background: $c1;
+}
+
+
+
+
+
+
+
+
+
+
+#logo {
+	float: left;
+
+}
+#nav {
+	float: right;
+	font-family: 'roboto_regular', sans-serif;
+	font-size: 13px;
+	line-height: 90px;
+
+	ul{
+		margin-right: 46px;
+	}
+}
+
+#nav>ul:before{
+	display: table;
+	content: ' ';
+}
+#nav>ul:after{
+	content: '';
+	clear: both;
+}
+#nav>ul>li{
+	float: left;
+	margin: 0 5px;
+
+	a {
+		color: $c2;
+	}
+}
+
+//slider
+#slider {
+	height: 150px
+}
+
+
+
+
+
+
+
+
+
+main {
+	color: $c1;
+	background: $c2;
+	h1 {
+		height: 80px;
+		line-height: 80px;
+		font-size: 25px;
+		font-family: 'exo_black', sans-serif;
+		color: $c2;
+		background: $c1;
+		font-weight: normal;
+		text-align: center;
+		margin: 0;
+		position: relative;
+		margin-bottom: 81px;
+		letter-spacing: 0.4px;
+	}
+	h1:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: calc(50% - 40px);
+		border-top: 17px solid $c1;
+		border-right: 40px solid transparent;
+		border-left: 40px solid transparent;
+	}
+	h2 {
+		text-align: center;
+		margin: 0 0 18px 0;
+		font-size: 30px;
+		color: $c1;
+		background: $c2;
+		// margin-bottom: 18px;
+		font-family: 'roboto_regular';
+	}
+	p {
+		width: 900px;
+		margin: 0 auto 18px auto;
+		font-family: 'roboto_light';
+	}
+}
+main > p:last-child {
+	margin-bottom: 81px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+	color: $c2;
+	background: $c1;
+	padding: 30px 40px;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: 'roboto_regular', sans-serif;
+}
+footer > ul {
+	display: inline-block;
+	min-width: 200px;
+}
